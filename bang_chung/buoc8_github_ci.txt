@@ -1,0 +1,15 @@
+PR: https://github.com/BinhDo908/ngayhoi-ai/pull/1  (nhánh lich-cong-diem → master)
+CI: https://github.com/BinhDo908/ngayhoi-ai/actions/runs/43848652506  · workflow test · job pytest · sự kiện pull_request · kết luận: success
+
+Trích log job pytest (ubuntu-latest, Python 3.12):
+  2026-11-16T10:25:16.0800548Z Successfully set up CPython (3.12.16)
+  2026-11-16T10:25:16.1039168Z Run pip install -r requirements.txt
+  2026-11-16T10:25:28.4635533Z Run python -m pytest -q
+  2026-11-16T10:25:33.0341958Z ........................                                                 [100%]
+  2026-11-16T10:25:33.0348760Z 24 passed, 1 warning in 3.37s
+
+Bảo vệ nhánh master:
+{"checks":["pytest"],"khong_mien_tru_quan_tri":true,"so_nguoi_duyet":1,"strict":true}
+
+Trạng thái PR:
+{"mergeStateStatus":"BLOCKED","reviewDecision":"REVIEW_REQUIRED","state":"OPEN"}
