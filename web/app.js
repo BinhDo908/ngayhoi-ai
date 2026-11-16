@@ -81,7 +81,8 @@ async function hoi() {
     const src = r.nguon.map((n) => `<span>${esc(n.nguon)} · ${n.diem.toFixed(2)}</span>`).join("");
     const lop = r.lop_tu_choi === 1 ? ` · từ chối ở lớp 1 (điểm cao nhất < ngưỡng ${r.nguong}, không gọi mô hình sinh)`
       : r.lop_tu_choi === 2 ? " · từ chối ở lớp 2 (mô hình trả lối ra cố định)" : "";
-    const mh = r.mo_hinh ? ` · nhúng ${esc(r.mo_hinh.nhung)} → sinh ${esc(r.mo_hinh.sinh)}` : " · TF-IDF, trích nguyên văn";
+    const mh = r.che_do !== "ollama" ? " · TF-IDF, trích nguyên văn"
+      : r.lop_tu_choi === 1 ? ` · nhúng ${esc(r.mo_hinh.nhung)}` : ` · nhúng ${esc(r.mo_hinh.nhung)} → sinh ${esc(r.mo_hinh.sinh)}`;
     box.innerHTML = `<div class="q">${esc(q)}</div><div>${esc(r.tra_loi)}</div>
       <div class="src">Đoạn tìm được: ${src}<br>Chế độ: ${esc(r.che_do)}${mh} · ngưỡng ${r.nguong}${lop}</div>`;
   } catch (e) { box.lastChild.textContent = loiText(e); }

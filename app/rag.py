@@ -162,13 +162,14 @@ def hoi(cau_hoi: str) -> dict:
     kq = tim(cau_hoi)
     ng = nguong()
     nguon = [{"nguon": d["nguon"], "diem": s} for s, d in kq]
+    mo_hinh = {"nhung": config.MO_HINH_NHUNG, "sinh": config.MO_HINH_SINH}
     if not kq or kq[0][0] < ng:                       # Lớp 1: ngưỡng trong mã, không gọi mô hình
-        return {"tra_loi": TU_CHOI, "nguon": nguon, "lop_tu_choi": 1, "che_do": che_do(), "nguong": ng}
+        return {"tra_loi": TU_CHOI, "nguon": nguon, "lop_tu_choi": 1, "che_do": che_do(), "nguong": ng,
+                **({"mo_hinh": mo_hinh} if che_do() == "ollama" else {})}
     if che_do() == "ollama":
         ngu_canh = "\n\n".join(d["noi_dung"] for _, d in kq)
         r = llm.chat(cau_lenh(ngu_canh, cau_hoi))
         tl = r["message"]["content"].strip()
-        mo_hinh = {"nhung": config.MO_HINH_NHUNG, "sinh": config.MO_HINH_SINH}
         if MA_TU_CHOI in tl:                          # Lớp 2: lối ra cố định trong lệnh, mã đổi thành TU_CHOI
             return {"tra_loi": TU_CHOI, "nguon": nguon, "lop_tu_choi": 2, "che_do": "ollama", "nguong": ng,
                     "mo_hinh": mo_hinh, "token_dau_vao": r.get("prompt_eval_count")}
