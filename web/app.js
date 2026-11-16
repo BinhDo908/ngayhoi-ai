@@ -79,9 +79,11 @@ async function hoi() {
   try {
     const r = await api("/api/hoi", { method: "POST", body: JSON.stringify({ cau_hoi: q }) });
     const src = r.nguon.map((n) => `<span>${esc(n.nguon)} · ${n.diem.toFixed(2)}</span>`).join("");
-    const lop = r.lop_tu_choi ? ` · từ chối ở lớp ${r.lop_tu_choi} (điểm cao nhất < ngưỡng ${r.nguong})` : "";
+    const lop = r.lop_tu_choi === 1 ? ` · từ chối ở lớp 1 (điểm cao nhất < ngưỡng ${r.nguong}, không gọi mô hình sinh)`
+      : r.lop_tu_choi === 2 ? " · từ chối ở lớp 2 (mô hình trả lối ra cố định)" : "";
+    const mh = r.mo_hinh ? ` · nhúng ${esc(r.mo_hinh.nhung)} → sinh ${esc(r.mo_hinh.sinh)}` : " · TF-IDF, trích nguyên văn";
     box.innerHTML = `<div class="q">${esc(q)}</div><div>${esc(r.tra_loi)}</div>
-      <div class="src">Đoạn tìm được: ${src}<br>Chế độ: ${esc(r.che_do)} · ngưỡng ${r.nguong}${lop}</div>`;
+      <div class="src">Đoạn tìm được: ${src}<br>Chế độ: ${esc(r.che_do)}${mh} · ngưỡng ${r.nguong}${lop}</div>`;
   } catch (e) { box.lastChild.textContent = loiText(e); }
 }
 $("#f-hoi").onsubmit = (ev) => { ev.preventDefault(); hoi(); };
@@ -98,6 +100,7 @@ async function guiAgent() {
     const r = await api("/api/agent", { method: "POST", body: JSON.stringify({ tin_nhan: t }) });
     r.vet.forEach((v) => $("#hoi-thoai").append(el("div", "trace", `[${esc(v.cong_cu)}] ${esc(JSON.stringify(v.tham_so))} → ${esc(JSON.stringify(v.ket_qua))}`)));
     themMsg("a", esc(r.tra_loi));
+    $("#hoi-thoai").append(el("div", "trace", r.che_do === "ollama" ? "Bộ lập kế hoạch: mô hình qua Ollama (tool_calls)" : "Bộ lập kế hoạch: theo luật (offline)"));
     if (r.hanh_dong_cho) {
       const hd = r.hanh_dong_cho;
       const c = el("div", "confirm", `<b>Cần bạn xác nhận thao tác ghi:</b> ${esc(hd.cau_xac_nhan)}<div class="acts"></div>`);
@@ -149,5 +152,5 @@ $("#b-poster").onclick = async () => {
 };
 
 // ---------- Khởi động ----------
-api("/api/trang-thai").then((t) => { $("#che-do").textContent = `Mô hình: ${t.llm === "ollama" ? "Ollama · " + t.mo_hinh_sinh : "offline (không dùng LLM)"}`; });
+api("/api/trang-thai").then((t) => { $("#che-do").textContent = `Mô hình: ${t.llm === "ollama" ? "Ollama · " + t.mo_hinh_sinh + " + " + t.mo_hinh_nhung : "offline (không dùng LLM)"}`; });
 hienNguoi().then(taiPhien);
