@@ -1,0 +1,35 @@
+$ LLM_MODE=ollama NGUONG_OLLAMA=0.513 python scripts/danh_gia_sinh.py   # câu lệnh GỐC (quy tắc trước ngữ cảnh), thang chấm chặt
+Mô hình sinh: qwen2.5:3b · nhúng: bge-m3 · ngưỡng lớp 1: 0.513
+✕ Muốn hủy đăng ký thì hạn chót là khi nào? (cần [Điều 4], 5.2s)
+    → Quy chế không đề cập nội dung này. Vui lòng liên hệ Phòng Công tác sinh viên. [Điều 4]
+✕ Bỏ phiên hai lần có bị gì không? (cần [Điều 4], 5.0s)
+    → Quy chế không đề cập nội dung này. Vui lòng liên hệ Phòng Công tác sinh viên. [Điều 4]
+✕ Đến muộn 15 phút có được tính điểm danh không? (cần [Điều 5], 5.1s)
+    → Quy chế không đề cập nội dung này. Vui lòng liên hệ Phòng Công tác sinh viên. [Điều 5]
+✓ Tham gia ngày hội được cộng mấy điểm rèn luyện? (cần [Điều 6], 5.4s)
+    → Theo quy chế, sinh viên tham dự đúng giờ từ 2 phiên trở lên được cộng 5 điểm rèn luyện vào học kỳ I năm học 2026–2027. Điểm được cập nhật chậm nhất 05 ngày làm việc sau ngày hội. [Điều 6.1]
+✕ CV gửi file Word được không? (cần [Điều 7], 5.1s)
+    → Quy chế không đề cập nội dung này. Vui lòng liên hệ Phòng Công tác sinh viên. [Điều 1]
+✕ Có được quay video lúc phỏng vấn không? (cần [Điều 8], 5.1s)
+    → Quy chế không đề cập nội dung này. Vui lòng liên hệ Phòng Công tác sinh viên. [Điều 8]
+✕ Sinh viên năm nhất có được đi không? (cần [Điều 2], 7.4s)
+    → Quy chế không đề cập nội dung này. Vui lòng liên hệ Phòng Công tác sinh viên. [Điều 2]
+✓ Một phiên nhận tối đa bao nhiêu người? (cần [Điều 3], 5.1s)
+    → Mỗi phiên tiếp nhận tối đa 30 sinh viên. [Điều 3.1]
+✕ Thông tin đăng ký của em được giữ bao lâu? (cần [Điều 9], 5.1s)
+    → Quy chế không đề cập nội dung này. Vui lòng liên hệ Phòng Công tác sinh viên [Điều 4].
+✕ Điểm danh bị sai thì khiếu nại ở đâu, trong bao lâu? (cần [Điều 10], 5.1s)
+    → Quy chế không đề cập nội dung này. Vui lòng liên hệ Phòng Công tác sinh viên [Điều 1].
+Trả lời đúng, trích đúng Điều: 2/10
+
+Ngày hội có phát đồ ăn trưa không? (điểm 0.453)
+    lớp 1: chặn · lớp 2 (tắt lớp 1): chặn → Quy chế không đề cập nội dung này. Vui lòng liên hệ Phòng Công tác sinh viên. [Điều 1]
+Gửi xe máy ở đâu? (điểm 0.422)
+    lớp 1: chặn · lớp 2 (tắt lớp 1): chặn → Quy chế không đề cập nội dung này. Vui lòng liên hệ Phòng Công tác sinh viên. [Điều 10]
+Học phí kỳ sau bao nhiêu? (điểm 0.51)
+    lớp 1: chặn · lớp 2 (tắt lớp 1): chặn → Quy chế không đề cập nội dung này. Vui lòng liên hệ Phòng Công tác sinh viên. [Điều 6]
+Thư viện mở cửa mấy giờ? (điểm 0.503)
+    lớp 1: chặn · lớp 2 (tắt lớp 1): chặn → Quy chế không đề cập nội dung này. Vui lòng liên hệ Phòng Công tác sinh viên. [Điều 1]
+Có xe buýt đưa đón không? (điểm 0.436)
+    lớp 1: chặn · lớp 2 (tắt lớp 1): chặn → Quy chế không đề cập nội dung này. Vui lòng liên hệ Phòng Công tác sinh viên. [Điều 5], [Điều 7], [Điều 9]
+Ngoài phạm vi bị chặn: lớp 1 5/5 · lớp 2 5/5

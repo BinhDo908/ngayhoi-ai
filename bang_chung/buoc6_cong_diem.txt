@@ -1,0 +1,22 @@
+$ python scripts/cong_diem.py && python scripts/cong_diem.py
+Đủ điều kiện: 44 · cộng mới: 44 · đã cộng trước: 0 · ngoại lệ: 2
+  ngoại lệ: 22020038 P07 THIEU_GIO
+  ngoại lệ: 22029999 P04 KHONG_DANG_KY
+Đủ điều kiện: 44 · cộng mới: 0 · đã cộng trước: 44 · ngoại lệ: 2
+  ngoại lệ: 22020038 P07 THIEU_GIO
+  ngoại lệ: 22029999 P04 KHONG_DANG_KY
+
+$ python bang_chung/kiem_can_bang.py
+Vào: 174 dòng quét · Ra: 174 = {'chua_du_2_phien': 48, 'den_muon': 30, 'duoc_tinh': 94, 'ngoai_le': 2}
+Ngoại lệ theo phân loại: 2 · theo truy vấn NGOAI_LE: 2
+ĐẠT: không dòng nào biến mất không lý do
+
+$ cd C:\ && <dự án>\.venv\Scripts\python.exe <dự án>\scripts\cong_diem.py   # chạy từ thư mục khác, như Task Scheduler
+Đủ điều kiện: 44 · cộng mới: 0 · đã cộng trước: 44 · ngoại lệ: 2
+  ngoại lệ: 22020038 P07 THIEU_GIO
+  ngoại lệ: 22029999 P04 KHONG_DANG_KY
+
+$ type out\nhat_ky_cong_diem.txt
+2026-11-16 16:21:24 du=44 moi=44 ngoai_le=2
+2026-11-16 16:21:24 du=44 moi=0 ngoai_le=2
+2026-11-16 16:21:43 du=44 moi=0 ngoai_le=2

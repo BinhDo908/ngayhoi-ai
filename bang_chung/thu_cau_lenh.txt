@@ -1,0 +1,107 @@
+$ LLM_MODE=ollama python bang_chung/thu_cau_lenh.py
+===== A_goc
+  ✕ Muốn hủy đăng ký thì hạn chót là khi nào?      → Quy chế không đề cập nội dung này. Vui lòng liên hệ Phòng Công tác sinh viên. [Điều 4]
+  ✕ Bỏ phiên hai lần có bị gì không?               → Quy chế không đề cập nội dung này. Vui lòng liên hệ Phòng Công tác sinh viên. [Điều 4]
+  ✕ Đến muộn 15 phút có được tính điểm danh không  → Quy chế không đề cập nội dung này. Vui lòng liên hệ Phòng Công tác sinh viên. [Điều 5]
+  ✓ Tham gia ngày hội được cộng mấy điểm rèn luyệ  → Theo quy chế, sinh viên tham dự đúng giờ từ 2 phiên trở lên được cộng 5 điểm rèn luyện vào học kỳ I năm học 2026–2027. Điểm được cập nhật chậm nhất 05
+  ✕ CV gửi file Word được không?                   → Quy chế không đề cập nội dung này. Vui lòng liên hệ Phòng Công tác sinh viên. [Điều 1]
+  ✕ Có được quay video lúc phỏng vấn không?        → Quy chế không đề cập nội dung này. Vui lòng liên hệ Phòng Công tác sinh viên. [Điều 8]
+  ✕ Sinh viên năm nhất có được đi không?           → Quy chế không đề cập nội dung này. Vui lòng liên hệ Phòng Công tác sinh viên. [Điều 2]
+  ✓ Một phiên nhận tối đa bao nhiêu người?         → Mỗi phiên tiếp nhận tối đa 30 sinh viên. [Điều 3.1]
+  ✕ Thông tin đăng ký của em được giữ bao lâu?     → Quy chế không đề cập nội dung này. Vui lòng liên hệ Phòng Công tác sinh viên [Điều 4].
+  ✕ Điểm danh bị sai thì khiếu nại ở đâu, trong b  → Quy chế không đề cập nội dung này. Vui lòng liên hệ Phòng Công tác sinh viên [Điều 1].
+  chặn Ngày hội có phát đồ ăn trưa không?             → Quy chế không đề cập nội dung này. Vui lòng liên hệ Phòng Công tác sinh viên. [Điều 1]
+  chặn Gửi xe máy ở đâu?                              → Quy chế không đề cập nội dung này. Vui lòng liên hệ Phòng Công tác sinh viên. [Điều 10]
+  chặn Học phí kỳ sau bao nhiêu?                      → Quy chế không đề cập nội dung này. Vui lòng liên hệ Phòng Công tác sinh viên. [Điều 6]
+  chặn Thư viện mở cửa mấy giờ?                       → Quy chế không đề cập nội dung này. Vui lòng liên hệ Phòng Công tác sinh viên. [Điều 1]
+  chặn Có xe buýt đưa đón không?                      → Quy chế không đề cập nội dung này. Vui lòng liên hệ Phòng Công tác sinh viên. [Điều 5], [Điều 7], [Điều 9]
+===== B_quy_tac_sau
+  ✓ Muốn hủy đăng ký thì hạn chót là khi nào?      → [Điều 4]
+  ✕ Bỏ phiên hai lần có bị gì không?               → Quy chế không đề cập nội dung này. Vui lòng liên hệ Phòng Công tác sinh viên. [Điều 4]
+  ✕ Đến muộn 15 phút có được tính điểm danh không  → Quy chế không đề cập nội dung này. Vui lòng liên hệ Phòng Công tác sinh viên [Điều 5].
+  ✕ Tham gia ngày hội được cộng mấy điểm rèn luyệ  → Quy chế này không đề cập nội dung tham gia ngày hội được cộng mấy điểm rèn luyện [Điều 6. Điều rèn luyện].
+  ✕ CV gửi file Word được không?                   → Quy chế không đề cập nội dung này. [Điều 7]
+  ✕ Có được quay video lúc phỏng vấn không?        → Quy chế không đề cập nội dung này. Vui lòng liên hệ Phòng Công tác sinh viên [Điều 8].
+  ✕ Sinh viên năm nhất có được đi không?           → Quy chế không đề cập nội dung này. Vui lòng liên hệ Phòng Công tác sinh viên [Điều 2].
+  ✓ Một phiên nhận tối đa bao nhiêu người?         → Mỗi phiên nhận tối đa 30 người [Điều 3].
+  ✕ Thông tin đăng ký của em được giữ bao lâu?     → Quy chế không đề cập nội dung này. Vui lòng liên hệ Phòng Công tác sinh viên [Điều 9].
+  ✕ Điểm danh bị sai thì khiếu nại ở đâu, trong b  → Quy chế không đề cập nội dung này. Vui lòng liên hệ Phòng Công tác sinh viên [Điều 10].
+  chặn Ngày hội có phát đồ ăn trưa không?             → Quy chế không đề cập nội dung này. Vui lòng liên hệ Phòng Công tác sinh viên [Điều 9].
+  chặn Gửi xe máy ở đâu?                              → Quy chế không đề cập nội dung này. Vui lòng liên hệ Phòng Công tác sinh viên [Điều 10].
+  chặn Học phí kỳ sau bao nhiêu?                      → Quy chế không đề cập nội dung này. Vui lòng liên hệ Phòng Công tác sinh viên [Điều 1].
+  chặn Thư viện mở cửa mấy giờ?                       → Quy chế không đề cập nội dung này. Vui lòng liên hệ Phòng Công tác sinh viên [Điều 1].
+  chặn Có xe buýt đưa đón không?                      → Quy chế không đề cập nội dung này. Vui lòng liên hệ Phòng Công tác sinh viên. [Điều 5. Điều 7. Điều 9]
+===== C_loi_ra_ma
+  ✕ Muốn hủy đăng ký thì hạn chót là khi nào?      → KHONG_DE_CAP [Điều 4]
+  ✕ Bỏ phiên hai lần có bị gì không?               → KHONG_DE_CAP [Điều 4]
+  ✕ Đến muộn 15 phút có được tính điểm danh không  → KHONG_DE_CAP [Điều 5]
+  ✕ Tham gia ngày hội được cộng mấy điểm rèn luyệ  → KHONG_DE_CAP [Điều 6.1]
+  ✕ CV gửi file Word được không?                   → KHONG_DE_CAP [Điều 7].
+  ✕ Có được quay video lúc phỏng vấn không?        → KHONG_DE_CAP [Điều 8].
+  ✕ Sinh viên năm nhất có được đi không?           → KHONG_DE_CAP [Điều 2].
+  ✓ Một phiên nhận tối đa bao nhiêu người?         → Mỗi phiên nhận tối đa 30 người [Điều 3].
+  ✕ Thông tin đăng ký của em được giữ bao lâu?     → KHONG_DE_CAP [Điều 9]
+  ✕ Điểm danh bị sai thì khiếu nại ở đâu, trong b  → KHONG_DE_CAP [Điều 10]
+  chặn Ngày hội có phát đồ ăn trưa không?             → KHONG_DE_CAP [Điều 9]
+  chặn Gửi xe máy ở đâu?                              → KHONG_DE_CAP [Điều 9]
+  chặn Học phí kỳ sau bao nhiêu?                      → KHONG_DE_CAP [Điều 1]
+  chặn Thư viện mở cửa mấy giờ?                       → KHONG_DE_CAP [Điều 1]
+  chặn Có xe buýt đưa đón không?                      → KHONG_DE_CAP [Điều 5. Điểm danh]
+===== D_system_loi_ra_ma
+  ✓ Muốn hủy đăng ký thì hạn chót là khi nào?      → Hạn chót để sinh viên hủy đăng ký là [Điều 4].
+  ✕ Bỏ phiên hai lần có bị gì không?               → KHONG_DE_CAP [Điều 4]
+  ✕ Đến muộn 15 phút có được tính điểm danh không  → KHONG_DE_CAP
+
+Điều 5. Điểm danh [Điều 5] quy định sinh viên đến muộn quá 10 phút không được tính là tham dự đúng giờ.
+  ✕ Tham gia ngày hội được cộng mấy điểm rèn luyệ  → KHONG_DE_CAP [Điều 6.1]
+  ✕ CV gửi file Word được không?                   → KHONG_DE_CAP
+[Điều 7.1]
+  ✕ Có được quay video lúc phỏng vấn không?        → KHONG_DE_CAP [Điều 8].
+  ✕ Sinh viên năm nhất có được đi không?           → KHONG_DE_CAP [Điều 2]
+  ✓ Một phiên nhận tối đa bao nhiêu người?         → Mỗi phiên nhận tối đa 30 người [Điều 3.1].
+  ✓ Thông tin đăng ký của em được giữ bao lâu?     → Thông tin đăng ký của bạn được lưu trữ không quá 12 tháng [Điều 9].
+  ✕ Điểm danh bị sai thì khiếu nại ở đâu, trong b  → Điểm danh bị sai thì khiếu nại gửi Phòng Công tác sinh viên qua cổng hoặc thư điện tử trong 05 ngày làm việc kể từ ngày công bố kết quả. [Điều 10. Khi
+  chặn Ngày hội có phát đồ ăn trưa không?             → KHONG_DE_CAP
+
+Nguồn: [Điều 1]
+  chặn Gửi xe máy ở đâu?                              → KHONG_DE_CAP
+  chặn Học phí kỳ sau bao nhiêu?                      → KHONG_DE_CAP [Điều 6]
+  chặn Thư viện mở cửa mấy giờ?                       → KHONG_DE_CAP
+  chặn Có xe buýt đưa đón không?                      → KHONG_DE_CAP
+===== E_loi_ra_ma_vi_du
+  ✓ Muốn hủy đăng ký thì hạn chót là khi nào?      → Câu hỏi "Muốn hủy đăng ký thì hạn chót là khi nào?" với <quy_che> có Điều 4 nói về hủy đăng ký → "Hủy đăng ký chậm nhất 24 giờ trước giờ bắt đầu phiên
+  ✓ Bỏ phiên hai lần có bị gì không?               → Bỏ phiên hai lần có bị gì không? [Điều 4] → Bỏ phiên hai lần có bị khóa đăng ký các phiên còn lại.
+  ✕ Đến muộn 15 phút có được tính điểm danh không  → Câu hỏi "Đến muộn 15 phút có được tính điểm danh không?" → KHONG_DE_CAP [Điều 5].
+  ✕ Tham gia ngày hội được cộng mấy điểm rèn luyệ  → Câu hỏi "Tham gia ngày hội được cộng mấy điểm rèn luyện?" [Điều 6].
+
+KHONG_DE_CAP
+  ✕ CV gửi file Word được không?                   → Câu hỏi: CV gửi file Word được không?  
+Đáp án: KHONG_DE_CAP [Điều 7].
+  ✕ Có được quay video lúc phỏng vấn không?        → Câu hỏi "Có được quay video lúc phỏng vấn không?" → KHONG_DE_CAP [Điều 8].
+  ✕ Sinh viên năm nhất có được đi không?           → Câu hỏi: Sinh viên năm nhất có được đi không?
+Đáp án: KHONG_DE_CAP [Điều 2].
+  ✓ Một phiên nhận tối đa bao nhiêu người?         → Câu hỏi: Một phiên nhận tối đa bao nhiêu người?
+Đáp án: Mỗi phiên tiếp nhận tối đa 30 sinh viên [Điều 3].
+  ✓ Thông tin đăng ký của em được giữ bao lâu?     → Thông tin đăng ký của em được giữ [Điều 9].
+  ✓ Điểm danh bị sai thì khiếu nại ở đâu, trong b  → Câu hỏi "Điểm danh bị sai thì khiếu nại ở đâu, trong bao lâu?" → [Điều 10] Sinh viên khiếu nại trong 05 ngày làm việc kể từ ngày công bố kết quả.
+  chặn Ngày hội có phát đồ ăn trưa không?             → Câu hỏi: Ngày hội có phát đồ ăn trưa không?
+→ KHONG_DE_CAP [Điều 9]
+  chặn Gửi xe máy ở đâu?                              → Câu hỏi: Gửi xe máy ở đâu?
+
+Đáp án: KHONG_DE_CAP
+
+Giải thích: Quy chế không có thông tin liên quan đến việc gửi xe máy ở
+  chặn Học phí kỳ sau bao nhiêu?                      → Câu hỏi "Học phí kỳ sau bao nhiêu?" KHONG_DE_CAP
+
+Quyết định này hoàn toàn không nhắc tới thông tin về học phí kỳ sau.
+  chặn Thư viện mở cửa mấy giờ?                       → Câu hỏi "Thư viện mở cửa mấy giờ?" KHONG_DE_CAP
+
+Quy chế không có thông tin về thời gian mở cửa của thư viện. [Điều 1]
+  chặn Có xe buýt đưa đón không?                      → Câu hỏi "Có xe buýt đưa đón không?" → KHONG_DE_CAP [Điều 5].
+
+Phương án               Trả lời đúng (10 câu vàng)   Từ chối đúng (5 câu ngoài, lớp 2)
+A_goc                     2/10                        5/5
+B_quy_tac_sau             2/10                        5/5
+C_loi_ra_ma               1/10                        5/5
+D_system_loi_ra_ma        3/10                        5/5
+E_loi_ra_ma_vi_du         5/10                        5/5

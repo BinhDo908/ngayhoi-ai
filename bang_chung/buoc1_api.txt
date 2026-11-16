@@ -1,0 +1,14 @@
+$ curl -X POST localhost:8000/api/dang-ky -H "X-Ma-SV: 22020001" -d {"ma_phien":"P05"}
+{"ok":true,"ma_sv":"22020001","ma_phien":"P05"}  ← HTTP 201
+$ (gửi lại đúng yêu cầu trên)
+{"detail":"DA_DANG_KY"}  ← HTTP 409
+$ curl -X POST localhost:8000/api/dang-ky -H "X-Ma-SV: 22020001" -d {}
+{"detail":[{"type":"missing","loc":["body","ma_phien"],"msg":"Field required","input":{}}]}  ← HTTP 422
+$ curl -X POST localhost:8000/api/dang-ky -d {"ma_phien":"P05"}      # không gửi danh tính
+{"detail":"CHUA_DANG_NHAP"}  ← HTTP 401
+$ curl localhost:8000/api/thong-ke      # thiếu khóa quản trị
+{"detail":"CAN_QUYEN_QUAN_TRI"}  ← HTTP 403
+$ curl localhost:8000/api/thong-ke -H "X-Admin-Key: ctsv-2026"   # có khóa quản trị (bỏ phần thân)
+  ← HTTP 200
+$ curl localhost:8000/api/trang-thai
+{"llm":"offline","auth":"demo","mo_hinh_sinh":"qwen2.5:3b","mo_hinh_nhung":"bge-m3","so_sinh_vien":120}  ← HTTP 200

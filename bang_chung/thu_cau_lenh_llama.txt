@@ -1,0 +1,38 @@
+===== F_lenh_buoi_6
+  ✕ Muốn hủy đăng ký thì hạn chót là khi nào?      → Hạn chót hủy đăng ký là 24 giờ trước giờ bắt đầu phiên.
+  ✕ Bỏ phiên hai lần có bị gì không?               → Quy chế không đề cập.
+  ✕ Đến muộn 15 phút có được tính điểm danh không  → Quy chế không đề cập.
+  ✕ Tham gia ngày hội được cộng mấy điểm rèn luyệ  → Theo Điều 6 trong quy chế, sinh viên tham dự đúng giờ từ 2 phiên trở lên được cộng 5 điểm rèn luyện vào học kỳ I năm học 2026–2027.
+  ✕ CV gửi file Word được không?                   → Quy chế không đề cập đến việc CV gửi file Word.
+  ✕ Có được quay video lúc phỏng vấn không?        → Quy chế không đề cập.
+  ✓ Sinh viên năm nhất có được đi không?           → Sinh viên năm nhất không được tham dự. 
+
+[Điều 2]
+  ✕ Một phiên nhận tối đa bao nhiêu người?         → Một phiên nhận tối đa 30 người.
+  ✕ Thông tin đăng ký của em được giữ bao lâu?     → Theo Điều 9 trong quy chế, dữ liệu đăng ký và điểm danh chỉ được lưu trữ không quá 12 tháng.
+  ✕ Điểm danh bị sai thì khiếu nại ở đâu, trong b  → Theo Điều 10 trong quy chế, khi sinh viên phát hiện điểm danh bị sai, họ có thể khiếu nại về vấn đề này gửi Phòng Công tác sinh viên qua cổng hoặc thư
+  chặn Ngày hội có phát đồ ăn trưa không?             → Quy chế không đề cập đến việc phát đồ ăn trưa tại ngày hội.
+  chặn Gửi xe máy ở đâu?                              → Quy chế không đề cập đến việc gửi xe máy.
+  chặn Học phí kỳ sau bao nhiêu?                      → Quy chế không đề cập đến học phí kỳ sau.
+  chặn Thư viện mở cửa mấy giờ?                       → Quy chế không đề cập đến giờ thư viện mở.
+  chặn Có xe buýt đưa đón không?                      → Quy chế không đề cập đến việc có xe buýt đưa đón hay không.
+===== M_vi_du_hoi_thoai
+  ✓ Muốn hủy đăng ký thì hạn chót là khi nào?      → Sinh viên hủy đăng ký trên cổng chậm nhất 24 giờ trước giờ bắt đầu phiên [Điều 4].
+  ✕ Bỏ phiên hai lần có bị gì không?               → KHONG_DE_CAP
+  ✓ Đến muộn 15 phút có được tính điểm danh không  → Không, đến muộn quá 10 phút được vào nghe nhưng không được tính là tham dự đúng giờ [Điều 5].
+  ✓ Tham gia ngày hội được cộng mấy điểm rèn luyệ  → Sinh viên tham dự đúng giờ từ 2 phiên trở lên được cộng 5 điểm rèn luyện vào học kỳ I năm học 2026–2027 [Điều 6].
+  ✓ CV gửi file Word được không?                   → Không, chỉ chấp nhận định dạng PDF [Điều 7].
+  ✓ Có được quay video lúc phỏng vấn không?        → Không ghi âm, ghi hình buổi phỏng vấn khi chưa được doanh nghiệp đồng ý [Điều 8].
+  ✓ Sinh viên năm nhất có được đi không?           → Sinh viên năm thứ nhất được tham dự các phiên còn chỗ sau ngày 12/11/2026 nhưng không được tính điểm rèn luyện [Điều 2].
+  ✓ Một phiên nhận tối đa bao nhiêu người?         → Mỗi phiên tiếp nhận tối đa 30 sinh viên [Điều 3].
+  ✓ Thông tin đăng ký của em được giữ bao lâu?     → Dữ liệu đăng ký và điểm danh được lưu trữ không quá 12 tháng [Điều 9].
+  ✓ Điểm danh bị sai thì khiếu nại ở đâu, trong b  → Sinh viên khiếu nại về điểm danh trong 05 ngày làm việc kể từ ngày công bố kết quả, gửi Phòng Công tác sinh viên qua cổng hoặc thư điện tử [Điều 10].
+  chặn Ngày hội có phát đồ ăn trưa không?             → KHONG_DE_CAP
+  chặn Gửi xe máy ở đâu?                              → KHONG_DE_CAP
+  chặn Học phí kỳ sau bao nhiêu?                      → KHONG_DE_CAP
+  chặn Thư viện mở cửa mấy giờ?                       → KHONG_DE_CAP
+  chặn Có xe buýt đưa đón không?                      → KHONG_DE_CAP
+
+Phương án               Trả lời đúng (10 câu vàng)   Từ chối đúng (5 câu ngoài, lớp 2)
+F_lenh_buoi_6             1/10                        5/5
+M_vi_du_hoi_thoai         9/10                        5/5

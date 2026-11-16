@@ -1,0 +1,68 @@
+===== F_lenh_buoi_6
+  ✓ Muốn hủy đăng ký thì hạn chót là khi nào?      → [Điều 4] Sinh viên hủy đăng ký trên cổng chậm nhất 24 giờ trước giờ bắt đầu phiên. [Điều 3] Mỗi phiên tiếp nhận tối đa 30 sinh viên. Hệ thống đăng ký 
+  ✕ Bỏ phiên hai lần có bị gì không?               → Quy chế không đề cập.
+  ✓ Đến muộn 15 phút có được tính điểm danh không  → [Điều 5] Quy chế chỉ nói về việc sinh viên quét mã QR tại cửa phòng trong 10 phút đầu của phiên và quy định sinh viên đến muộn quá 10 phút được vào ng
+  ✕ Tham gia ngày hội được cộng mấy điểm rèn luyệ  → Quy chế không đề cập.
+  ✕ CV gửi file Word được không?                   → [Điều 7] Hồ sơ xin việc, thực tập gửi doanh nghiệp qua cổng phải ở định dạng PDF, dung lượng không quá 2 MB. Không chấp nhận tệp Word hoặc tệp ảnh.
+
+Q
+  ✕ Có được quay video lúc phỏng vấn không?        → [Điều 8] Quy chế không đề cập.
+  ✕ Sinh viên năm nhất có được đi không?           → Quy chế không đề cập. [Điều 2]
+  ✓ Một phiên nhận tối đa bao nhiêu người?         → [Điều 3] Một phiên nhận tối đa 30 người.
+  ✓ Thông tin đăng ký của em được giữ bao lâu?     → [Điều 9] Thông tin đăng ký của sinh viên được lưu trữ không quá 12 tháng.
+  ✓ Điểm danh bị sai thì khiếu nại ở đâu, trong b  → [Điều 10] Điểm danh bị sai thì khiếu nại tại Phòng Công tác sinh viên trong 05 ngày làm việc kể từ ngày công bố kết quả. [Điều 1] Phạm vi điều chỉnh q
+  chặn Ngày hội có phát đồ ăn trưa không?             → Quy chế không đề cập. [Điều 1]
+  chặn Gửi xe máy ở đâu?                              → Quy chế không đề cập.
+  chặn Học phí kỳ sau bao nhiêu?                      → Quy chế không đề cập. [Điều 1]
+  chặn Thư viện mở cửa mấy giờ?                       → Quy chế không đề cập. [Điều 1]
+  chặn Có xe buýt đưa đón không?                      → Quy chế không đề cập.
+===== G_trich_roi_tra_loi
+  ✕ Muốn hủy đăng ký thì hạn chót là khi nào?      → KHONG_DE_CAP [Điều 4]
+  ✕ Bỏ phiên hai lần có bị gì không?               → KHONG_DE_CAP [Điều 4]
+  ✕ Đến muộn 15 phút có được tính điểm danh không  → KHONG_DE_CAP [Điều 5]
+  ✕ Tham gia ngày hội được cộng mấy điểm rèn luyệ  → KHONG_DE_CAP [Điều 6.1]
+  ✕ CV gửi file Word được không?                   → KHONG_DE_CAP [Điều 7]
+  ✕ Có được quay video lúc phỏng vấn không?        → KHONG_DE_CAP [Điều 8]
+  ✕ Sinh viên năm nhất có được đi không?           → KHONG_DE_CAP [Điều 2]
+  ✓ Một phiên nhận tối đa bao nhiêu người?         → TRÍCH: Điều 3. Sức chứa phiên
+Mỗi phiên tiếp nhận tối đa 30 sinh viên. Hệ thống đăng ký tự động đóng khi phiên đủ 30 người.
+TRẢ LỜI: Một phiên nhận tố
+  ✕ Thông tin đăng ký của em được giữ bao lâu?     → KHONG_DE_CAP [Điều 9]
+  ✕ Điểm danh bị sai thì khiếu nại ở đâu, trong b  → KHONG_DE_CAP
+  chặn Ngày hội có phát đồ ăn trưa không?             → KHONG_DE_CAP [Điều 9]
+  chặn Gửi xe máy ở đâu?                              → KHONG_DE_CAP [Điều 9]
+  chặn Học phí kỳ sau bao nhiêu?                      → KHONG_DE_CAP [Điều 6]
+  chặn Thư viện mở cửa mấy giờ?                       → KHONG_DE_CAP [Điều 1]
+  chặn Có xe buýt đưa đón không?                      → KHONG_DE_CAP [Điều 9]
+===== H_top1_trich
+  ✓ Muốn hủy đăng ký thì hạn chót là khi nào?      → TRÍCH: Điều 4. Hủy đăng ký trên cổng chậm nhất 24 giờ trước giờ bắt đầu phiên. 
+ĐIỀU N: Điều 4. Hủy đăng ký trên cổng chậm nhất 24 giờ trước giờ bắt đ
+  ✕ Bỏ phiên hai lần có bị gì không?               → KHONG_DE_CAP [Điều 4]
+  ✕ Đến muộn 15 phút có được tính điểm danh không  → TRÍCH: Điều 5. Điểm danh
+KHONG_DE_CAP
+Điều n: [Điều 5]
+  ✕ Tham gia ngày hội được cộng mấy điểm rèn luyệ  → TRích: Điều 6. Điểm rèn luyện
+Sinh viên tham dự đúng giờ từ 2 phiên trở lên được cộng 5 điểm rèn luyện vào học kỳ I năm học 2026–2027. Điểm được cập n
+  ✕ CV gửi file Word được không?                   → KHONG_DE_CAP [Điều 7]
+  ✕ Có được quay video lúc phỏng vấn không?        → KHONG_DE_CAP [Điều 8]
+  ✕ Sinh viên năm nhất có được đi không?           → TRÍCH: Điều 2. Đối tượng tham dự
+Sinh viên đại học chính quy từ năm thứ hai trở lên được đăng ký tham dự. Sinh viên năm thứ nhất được tham dự các phiê
+  ✓ Một phiên nhận tối đa bao nhiêu người?         → TRích: Điều 3. Sức chứa phiên: Mỗi phiên tiếp nhận tối đa 30 sinh viên.  
+TRẢ LỜI: Một phiên nhận tối đa 30 người [Điều 3].
+  ✓ Thông tin đăng ký của em được giữ bao lâu?     → TRích: Điều 9. Bảo vệ dữ liệu cá nhân  
+Điều 9. Bảo vệ dữ liệu cá nhân  
+TRA LỜI: Một thông tin trong quy chế nói rằng thông tin đăng ký của em sẽ đượ
+  ✕ Điểm danh bị sai thì khiếu nại ở đâu, trong b  → KHONG_DE_CAP
+  chặn Ngày hội có phát đồ ăn trưa không?             → KHONG_DE_CAP
+  chặn Gửi xe máy ở đâu?                              → KHONG_DE_CAP [Điều 9]
+  chặn Học phí kỳ sau bao nhiêu?                      → KHONG_DE_CAP
+  chặn Thư viện mở cửa mấy giờ?                       → KHONG_DE_CAP
+  LỌT  Có xe buýt đưa đón không?                      → TRÍCH: chép nguyên văn câu trong <quy_che> trả lời được câu hỏi; nếu không có câu nào, ghi KHONG_DE_CAP.
+KHONG_DE_CAP.
+
+
+
+Phương án               Trả lời đúng (10 câu vàng)   Từ chối đúng (5 câu ngoài, lớp 2)
+F_lenh_buoi_6             5/10                        5/5
+G_trich_roi_tra_loi       1/10                        5/5
+H_top1_trich              3/10                        4/5

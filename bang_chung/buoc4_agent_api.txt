@@ -1,0 +1,23 @@
+(sau python scripts/nap_du_lieu.py) số đăng ký ban đầu của 22020001: 1
+
+$ POST /api/agent (22020001) «Có phiên nào về dữ liệu không?»
+  trả lời: Các phiên phù hợp: P02 Kỹ sư dữ liệu (08:00, còn 19 chỗ); P07 Phân tích nghiệp vụ (13:30, còn 12 chỗ).
+  công cụ: tim_phien {'linh_vuc': 'Dữ liệu', 'buoi': None} → {"phien": [{"ma_phien": "P02", "chu_de": "Kỹ sư dữ liệu", "linh_vuc": "Dữ liệu", "gio_bat_dau": "2026-11-13T08:00:00", "con_cho": 19}, {"ma_phien": "P07", "chu_
+  hành động chờ: None
+  số đăng ký của 22020001: 1
+
+$ POST /api/agent (22020001) «Đăng ký cho bạn 22020002 vào P01»
+  trả lời: Mình chỉ đăng ký được cho chính bạn (22020001), không đăng ký hộ người khác.
+  hành động chờ: None
+  số đăng ký của 22020001: 1
+
+$ POST /api/agent (22020001) «Đăng ký giúp mình phiên P10»
+  trả lời: Phiên P10 còn 15 chỗ. Vui lòng xác nhận thao tác ghi bên dưới.
+  công cụ: xem_cho {'ma_phien': 'P10'} → {"ma_phien": "P10", "con_cho": 15}
+  công cụ: dang_ky {'ma_phien': 'P10'} → {"trang_thai": "CHO_NGUOI_DUNG_XAC_NHAN"}
+  hành động chờ: {'id': '52529e5db9a0', 'ma_sv': '22020001', 'cong_cu': 'dang_ky', 'ma_phien': 'P10', 'cau_xac_nhan': 'Đăng ký 22020001 vào P10?'}
+  số đăng ký của 22020001: 1
+
+$ POST /api/agent/xac-nhan bằng tài khoản KHÁC (22020002), id=52529e5db9a0 → {'loi': 'KHONG_CO_HANH_DONG'} · số đăng ký 22020001: 1
+$ POST /api/agent/xac-nhan (22020001 bấm Xác nhận) → HTTP 200 {'ma': 201, 'ok': True, 'ma_sv': '22020001', 'ma_phien': 'P10'} · số đăng ký 22020001: 2
+$ (bấm Xác nhận lần 2 cùng id) → {'loi': 'KHONG_CO_HANH_DONG'} · số đăng ký 22020001: 2

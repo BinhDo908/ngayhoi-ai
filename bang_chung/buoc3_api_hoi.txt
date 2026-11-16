@@ -1,0 +1,64 @@
+$ POST /api/hoi {"cau_hoi": "Muốn hủy đăng ký thì hạn chót là khi nào?"} ← HTTP 200
+{
+ "tra_loi": "Sinh viên hủy đăng ký trên cổng chậm nhất 24 giờ trước giờ bắt đầu phiên. [Điều 4]",
+ "nguon": [
+  {
+   "nguon": "Điều 4. Hủy đăng ký",
+   "diem": 0.567
+  },
+  {
+   "nguon": "Điều 3. Sức chứa phiên",
+   "diem": 0.158
+  },
+  {
+   "nguon": "Điều 6. Điểm rèn luyện",
+   "diem": 0.13
+  }
+ ],
+ "che_do": "offline",
+ "nguong": 0.37
+}
+
+$ POST /api/hoi {"cau_hoi": "Đến muộn 15 phút có được tính điểm danh không?"} ← HTTP 200
+{
+ "tra_loi": "Sinh viên đến muộn quá 10 phút được vào nghe nhưng không được tính là tham dự đúng giờ. [Điều 5]",
+ "nguon": [
+  {
+   "nguon": "Điều 5. Điểm danh",
+   "diem": 0.399
+  },
+  {
+   "nguon": "Điều 4. Hủy đăng ký",
+   "diem": 0.105
+  },
+  {
+   "nguon": "Điều 2. Đối tượng tham dự",
+   "diem": 0.1
+  }
+ ],
+ "che_do": "offline",
+ "nguong": 0.37
+}
+
+$ POST /api/hoi {"cau_hoi": "Ngày hội có phát đồ ăn trưa không?"} ← HTTP 200
+{
+ "tra_loi": "Quy chế không đề cập nội dung này. Vui lòng liên hệ Phòng Công tác sinh viên.",
+ "nguon": [
+  {
+   "nguon": "Điều 1. Phạm vi điều chỉnh",
+   "diem": 0.255
+  },
+  {
+   "nguon": "Điều 6. Điểm rèn luyện",
+   "diem": 0.172
+  },
+  {
+   "nguon": "Điều 4. Hủy đăng ký",
+   "diem": 0.123
+  }
+ ],
+ "lop_tu_choi": 1,
+ "che_do": "offline",
+ "nguong": 0.37
+}
+

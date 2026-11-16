@@ -1,0 +1,38 @@
+===== J_khong_chuoi_tu_choi
+  ✓ Muốn hủy đăng ký thì hạn chót là khi nào?      → Quyết định 4 [Điều 4] chỉ ra rằng sinh viên cần hủy đăng ký chậm nhất 24 giờ trước giờ bắt đầu phiên.
+  ✓ Bỏ phiên hai lần có bị gì không?               → Bỏ phiên hai lần có bị gì không? [Điều 4]
+  ✕ Đến muộn 15 phút có được tính điểm danh không  → Đến muộn 15 phút không được tính là tham dự đúng giờ [Điều 5]. Quy chế không quy định về trường hợp đến muộn 15 phút có được tính điểm danh không.
+  ✓ Tham gia ngày hội được cộng mấy điểm rèn luyệ  → Tham gia ngày hội được cộng 5 điểm rèn luyện [Điều 6.1]. [Điều 1]
+  ✓ CV gửi file Word được không?                   → CV gửi file Word được không? [Điều 7]. Không được, hồ sơ xin việc, thực tập gửi doanh nghiệp qua cổng phải ở định dạng PDF.
+  ✕ Có được quay video lúc phỏng vấn không?        → Quy chế không quy định việc này [Điều 8].
+  ✕ Sinh viên năm nhất có được đi không?           → Quy chế không quy định việc này [Điều 2].
+  ✓ Một phiên nhận tối đa bao nhiêu người?         → Mỗi phiên nhận tối đa 30 người [Điều 3].
+  ✓ Thông tin đăng ký của em được giữ bao lâu?     → Quyết định 9 [Điều 9] chỉ ra rằng thông tin đăng ký được lưu trữ không quá 12 tháng.
+  ✓ Điểm danh bị sai thì khiếu nại ở đâu, trong b  → Điểm danh bị sai thì khiếu nại gửi Phòng Công tác sinh viên trong 05 ngày làm việc kể từ ngày công bố kết quả [Điều 10].
+  chặn Ngày hội có phát đồ ăn trưa không?             → Quy chế không quy định việc này [Điều 9].
+  chặn Gửi xe máy ở đâu?                              → Quy chế không quy định việc này [Điều 9].  
+Quy chế không quy định việc này [Điều 7].  
+Quy chế không quy định việc này 
+  chặn Học phí kỳ sau bao nhiêu?                      → Quy chế không quy định việc này [Điều 1].
+  chặn Thư viện mở cửa mấy giờ?                       → Quy chế không quy định thư viện mở cửa mấy giờ [Điều 1].
+  chặn Có xe buýt đưa đón không?                      → Quy chế không quy định việc có xe buýt đưa đón. [Điều 5]
+===== M_vi_du_hoi_thoai
+  ✓ Muốn hủy đăng ký thì hạn chót là khi nào?      → Muốn hủy đăng ký thì hạn chót là chậm nhất 24 giờ trước giờ bắt đầu phiên [Điều 4].
+  ✓ Bỏ phiên hai lần có bị gì không?               → Bỏ phiên hai lần trở lên sẽ bị khóa đăng ký các phiên còn lại của ngày hội [Điều 4].
+  ✓ Đến muộn 15 phút có được tính điểm danh không  → Đến muộn quá 10 phút được vào nghe nhưng không được tính là tham dự đúng giờ [Điều 5]. Không được tính [Điều 5]. Không được tính [Điều 6].
+  ✓ Tham gia ngày hội được cộng mấy điểm rèn luyệ  → Điểm được cộng 5 điểm rèn luyện vào học kỳ I năm học 2026–2027 sau khi tham dự đúng giờ từ 2 phiên trở lên [Điều 6].
+  ✓ CV gửi file Word được không?                   → CV gửi file Word không được [Điều 7].
+  ✓ Có được quay video lúc phỏng vấn không?        → Công tác phỏng vấn không được ghi âm, ghi hình khi chưa được doanh nghiệp đồng ý [Điều 8]. [Điều 8]
+  ✓ Sinh viên năm nhất có được đi không?           → Sinh viên năm nhất được tham dự các phiên còn chỗ sau ngày 12/11/2026 nhưng không được tính điểm rèn luyện [Điều 2].
+  ✓ Một phiên nhận tối đa bao nhiêu người?         → Mỗi phiên tiếp nhận tối đa 30 sinh viên [Điều 3].
+  ✓ Thông tin đăng ký của em được giữ bao lâu?     → Thông tin đăng ký của sinh viên được lưu trữ không quá 12 tháng [Điều 9].
+  ✕ Điểm danh bị sai thì khiếu nại ở đâu, trong b  → Điểm danh bị sai thì khiếu nại gửi Phòng Công tác sinh viên qua cổng hoặc thư điện tử trong 05 ngày làm việc kể từ ngày công bố kết quả [Điều 10. Khiế
+  chặn Ngày hội có phát đồ ăn trưa không?             → KHONG_DE_CAP
+  chặn Gửi xe máy ở đâu?                              → KHONG_DE_CAP
+  chặn Học phí kỳ sau bao nhiêu?                      → KHONG_DE_CAP
+  chặn Thư viện mở cửa mấy giờ?                       → KHONG_DE_CAP
+  chặn Có xe buýt đưa đón không?                      → KHONG_DE_CAP
+
+Phương án               Trả lời đúng (10 câu vàng)   Từ chối đúng (5 câu ngoài, lớp 2)
+J_khong_chuoi_tu_choi     7/10                        5/5
+M_vi_du_hoi_thoai         9/10                        5/5

@@ -1,0 +1,12 @@
+$ python scripts/tao_poster.py 48213
+poster: out/poster/poster.png
+nen: out/poster/nen_48213.png
+tuong_phan: {'chữ trắng / dải đỏ': 10.7, 'chữ vàng / dải đỏ': 7.0}
+doi_chieu: {'Tên sự kiện': True, 'Ngày': True, 'Giờ': True, 'Địa điểm': True}
+alt: Poster NGÀY HỘI VIỆC LÀM 2026, Thứ Sáu, 13/11/2026 · 8:00 – 16:30, tại Hội trường A – Phòng B201; quét mã để đăng ký trước 12/11 bằng mã QR ở góc phải dưới.
+brief_co_cam_chu_trong_nen: True
+
+# Kiểm tái lập (băm SHA-256 điểm ảnh của nền)
+seed 48213 lần 1: 94aada203c196b92
+seed 48213 lần 2: 94aada203c196b92  → giống hệt ✓
+seed 48214      : 1cfbcaefcd8ac26d  → khác ✓ (seed quyết định ảnh)

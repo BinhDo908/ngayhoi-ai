@@ -1,0 +1,26 @@
+$ LLM_MODE=ollama python scripts/nhung.py
+Đã nhúng 10 đoạn · chế độ ollama · 1024 chiều
+$ LLM_MODE=ollama python scripts/tim.py "bỏ phiên hai lần có bị gì không"
+0.554  Điều 4. Hủy đăng ký
+0.528  Điều 2. Đối tượng tham dự
+0.505  Điều 3. Sức chứa phiên
+Ngưỡng (ollama): 0.45
+$ LLM_MODE=ollama python scripts/danh_gia_rag.py
+✓ 0.678 Muốn hủy đăng ký thì hạn chót là khi nào? → Điều 4. 
+✓ 0.516 Bỏ phiên hai lần có bị gì không? → Điều 4. 
+✓ 0.649 Đến muộn 15 phút có được tính điểm danh không? → Điều 5. 
+✓ 0.701 Tham gia ngày hội được cộng mấy điểm rèn luyện? → Điều 6. 
+✓ 0.663 CV gửi file Word được không? → Điều 7. 
+✓ 0.644 Có được quay video lúc phỏng vấn không? → Điều 8. 
+✓ 0.613 Sinh viên năm nhất có được đi không? → Điều 2. 
+✓ 0.703 Một phiên nhận tối đa bao nhiêu người? → Điều 3. 
+✓ 0.687 Thông tin đăng ký của em được giữ bao lâu? → Điều 9. 
+✓ 0.651 Điểm danh bị sai thì khiếu nại ở đâu, trong bao lâu? → Điều 10.
+Recall@3: 10/10
+  ngoài phạm vi 0.453  Ngày hội có phát đồ ăn trưa không?
+  ngoài phạm vi 0.422  Gửi xe máy ở đâu?
+  ngoài phạm vi 0.510  Học phí kỳ sau bao nhiêu?
+  ngoài phạm vi 0.503  Thư viện mở cửa mấy giờ?
+  ngoài phạm vi 0.436  Có xe buýt đưa đón không?
+Trong phạm vi: 0.516–0.703 · Ngoài phạm vi: 0.422–0.510
+Khoảng trống 0.510–0.516 → gợi ý ngưỡng 0.51 (đang dùng 0.45)
