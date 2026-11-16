@@ -22,8 +22,15 @@ W, H = 1080, 1350
 MAU_DAI = (124, 20, 5)        # #7c1405 — dải nền đặc sau chữ
 MAU_CHU = (255, 255, 255)
 MAU_NHAN = (255, 201, 71)
-FONT = os.getenv("FONT_PATH", "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf")
-FONT_DAM = os.getenv("FONT_BOLD_PATH", "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf")
+def _phong(bien, *ung_vien):
+    """Phông chữ: biến môi trường nếu có, không thì tệp đầu tiên tồn tại (Linux/Docker → Windows → macOS)."""
+    return os.getenv(bien) or next((p for p in ung_vien if Path(p).exists()), ung_vien[0])
+
+
+FONT = _phong("FONT_PATH", "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+              "C:/Windows/Fonts/arial.ttf", "/Library/Fonts/Arial Unicode.ttf")
+FONT_DAM = _phong("FONT_BOLD_PATH", "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
+                  "C:/Windows/Fonts/arialbd.ttf", "/Library/Fonts/Arial Unicode.ttf")
 THU_MUC = config.OUT / "poster"
 
 
