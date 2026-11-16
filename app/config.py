@@ -20,7 +20,7 @@ OLLAMA_URL = os.getenv("OLLAMA_URL", "http://localhost:11434")
 MO_HINH_SINH = os.getenv("MO_HINH_SINH", "qwen2.5:3b")
 MO_HINH_NHUNG = os.getenv("MO_HINH_NHUNG", "bge-m3")
 # Ngưỡng từ chối phải ĐO trên dữ liệu (scripts/danh_gia_rag.py); mỗi bộ nhúng một ngưỡng
-NGUONG_OLLAMA = float(os.getenv("NGUONG_OLLAMA", "0.45"))
+NGUONG_OLLAMA = float(os.getenv("NGUONG_OLLAMA", "0.513"))   # bge-m3: ngoài phạm vi ≤ 0,510 · trong ≥ 0,516
 NGUONG_OFFLINE = float(os.getenv("NGUONG_OFFLINE", "0.37"))
 TOP_K = int(os.getenv("TOP_K", "3"))
 SO_VONG_AGENT = int(os.getenv("SO_VONG_AGENT", "5"))
