@@ -15,7 +15,7 @@ Mọi con số dưới đây lấy từ lần chạy thật trên máy này; b�
 | RAG có trích dẫn, ngưỡng có số đo | **Ollama:** Recall@3 10/10 · ngưỡng đo **0,513** (khoảng trống 0,510–0,516) · sinh đúng, trích đúng Điều **10/10** · ngoài phạm vi chặn 5/5 ở cả lớp 1 và lớp 2. **Offline:** Recall@3 10/10, ngưỡng 0,37 | `bang_chung/buoc3_rag_ollama.txt`, `buoc3_sinh_lenh_*.txt`, `thu_cau_lenh*.txt`, `buoc3_rag.txt`, ảnh `bang_chung/anh/03_hoi_dap.png` | 1,5 |
 | Agent: ghi trái phép = 0 | **Ollama (qwen2.5:3b): 10/10 · ghi trái phép 0** (mã gốc 9/10). **Offline: 10/10 · 0**; ca tiêm: đề nghị ghi P03 nhưng ghi thật 0 | `bang_chung/buoc4_agent_ollama*.txt`, `buoc4_agent.txt`, `buoc4_agent_api.txt`, `out/nhat_ky_agent.jsonl`, ảnh `bang_chung/anh/04_ca_tiem_bi_chan.png` | 1,5 |
 | Chỉ số có định nghĩa, tập nhỏ đúng | Tập nhỏ: tay **50,0** = SQL **50,0** (bản đầu của AI 100,0) · 4 lỗi dữ liệu · 3 chỉ số có tên | `bang_chung/buoc5_phan_tich.txt`, `out/bieu_do_ty_le.png` | 1,5 |
-| Cộng điểm chạy lại an toàn | Lần 1 cộng mới **44** · lần 2 cộng mới **0** · **2** ngoại lệ có lý do · cân bằng 174 = 174 | `bang_chung/buoc6_cong_diem.txt`, `out/ngoai_le.csv`, `out/nhat_ky_cong_diem.txt` | 1,0 |
+| Cộng điểm chạy lại an toàn | Lần 1 cộng mới **44** · lần 2 cộng mới **0** · **2** ngoại lệ có lý do · cân bằng 174 = 174 · lịch 18:00 chạy thử: moi=0 | `bang_chung/buoc6_cong_diem.txt`, `buoc6_lich_chay.txt`, `out/ngoai_le.csv`, `out/nhat_ky_cong_diem.txt` | 1,0 |
 | Poster đạt ba phép kiểm | Tương phản 10,7 và 7,0 (≥ 4,5) · đối chiếu 4/4 · alt text · cùng seed → cùng nền | `out/poster/poster.png`, `kiem_tra.md`, `so_tai_san.csv`, `bang_chung/buoc7_poster.txt` | 1,0 |
 
 ## Bước 0 · Chuẩn bị môi trường
@@ -162,8 +162,7 @@ $ python scripts/cong_diem.py && python scripts/cong_diem.py
 - **Cân bằng** (`bang_chung/kiem_can_bang.py`): vào **174** dòng quét = ra **174** = được tính 94 + chưa đủ 2 phiên 48 + đến muộn 30 + ngoại lệ 2. Không dòng nào biến mất không lý do.
 - **Chạy từ thư mục khác** (như Task Scheduler): đứng ở `C:\` gọi bằng đường dẫn tuyệt đối → vẫn "cộng mới: 0" trên đúng CSDL, không sinh CSDL rỗng (vì `config.py` dựng đường dẫn từ vị trí mã nguồn).
 - Nhật ký `out/nhat_ky_cong_diem.txt` ghi mỗi lần chạy một dòng (thời điểm, du, moi, ngoại lệ).
-- Lịch 18:00 hằng ngày: **chưa tạo tác vụ trên máy em** (tạo tác vụ Windows là thay đổi lâu dài trên máy cá nhân). Lệnh sẽ dùng khi triển khai, đường dẫn tuyệt đối:
-  `schtasks /create /tn CongDiem /sc daily /st 18:00 /tr "\"<dự án>\.venv\Scripts\python.exe\" \"<dự án>\scripts\cong_diem.py\""`. Điều kiện để lịch chạy đúng đã được kiểm ở trên: gọi từ `C:\` vẫn dùng đúng CSDL, lần chạy lặp cộng mới 0, mỗi lần chạy thêm một dòng nhật ký.
+- **Lịch 18:00 hằng ngày (Task Scheduler)** — `bang_chung/buoc6_lich_chay.txt`: tạo tác vụ `CongDiem` bằng `schtasks /create … /sc daily /st 18:00`, đường dẫn tuyệt đối tới `.venv\Scripts\python.exe` và `scripts\cong_diem.py`. Chạy thử ngay bằng `schtasks /run /tn CongDiem` → **Last Result 0**, nhật ký có thêm dòng `2026-11-16 17:23:43 du=44 moi=0 ngoai_le=2` — lần chạy theo lịch không cộng trùng. Thêm `-X utf8` vì tác vụ chạy trong cửa sổ ẩn dùng bảng mã cp1252, không in được dòng "Đủ điều kiện…" (nhật ký vẫn được ghi trước khi in, nhưng tác vụ sẽ báo lỗi).
 
 | Chỉ tiêu | Thủ công | Sau tự động hóa |
 |---|---|---|
@@ -200,7 +199,7 @@ c7781ed feat: hệ thống ngày hội tích hợp AI
 ```
 Mỗi commit một ý; mọi sửa đổi nằm ở `app/`, `web/` (commit riêng), `docs/`, `scripts/` — không sửa `tests/`, `spec.md`, `.github/`, `data/quy_che.md`. Sau mọi sửa đổi: 24 passed.
 - `.github/workflows/test.yml` chạy `pytest` trên mỗi PR; `.github/pull_request_template.md` 5 mục (Việc · Vì sao · Bằng chứng · Phần AI làm · Cần soi kỹ); `AGENTS.md` cấm sửa `tests/`, `spec.md`, `.github/`, `data/quy_che.md`. Commit `fix(poster)` tuân thủ: chỉ sửa `app/`.
-- GitHub: **chưa đẩy lên kho từ xa** cho bài này; lịch sử Git cục bộ (thư mục `.git`) nộp kèm trong zip. Khi đẩy lên: bật Branch protection cho `master` (PR + 1 duyệt + status check `pytest` + không miễn trừ) như em đã làm ở Buổi 5 (`BinhDo908/ngayhoi`).
+- **GitHub:** https://github.com/BinhDo908/ngayhoi-ai (public). Branch protection cho `master`: bắt buộc PR, **1 người duyệt**, status check **`pytest`** phải qua, nhánh phải cập nhật (strict), **không miễn trừ quản trị viên**. Phần lịch chạy ở Bước 6 được đưa vào qua **PR từ nhánh `lich-cong-diem`**, mô tả theo mẫu 5 mục — CI chạy `pytest` trên máy Ubuntu của GitHub: CI_KET_QUA.
 - **Docker:** máy em chưa cài Docker (tài liệu ghi là tùy chọn) nên chưa chạy `docker compose up`. Em đã đọc cấu hình: ứng dụng chạy bằng người dùng không phải root (`USER ngayhoi`), cổng chỉ mở `127.0.0.1:8000` cho reverse proxy/SSO, Ollama chạy trên cùng máy chủ nên dữ liệu không ra ngoài, dữ liệu nằm ở volume `du_lieu`. Dockerfile cài `fonts-dejavu-core` nên poster trong Docker dùng đúng đường dẫn DejaVu gốc.
 
 **Điều kiện đưa vào dùng thật** (Mục V): bắt buộc `AUTH_MODE=header` sau cổng SSO, `ADMIN_KEY` ngẫu nhiên ≥ 32 ký tự trong kho bí mật + HTTPS, tuân thủ Nghị định 13/2023/NĐ-CP, thay dữ liệu thật và chạy lại `nhung.py`, sao lưu `ngayhoi.db` hằng ngày, duyệt `ngoai_le.csv` và theo dõi nhật ký agent. `ctsv-2026` chỉ dùng khi học.
