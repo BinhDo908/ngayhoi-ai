@@ -16,7 +16,7 @@ Mọi con số dưới đây lấy từ lần chạy thật trên máy này; b�
 | Agent: ghi trái phép = 0 | **Ollama (qwen2.5:3b): 10/10 · ghi trái phép 0** (mã gốc 9/10). **Offline: 10/10 · 0**; ca tiêm: đề nghị ghi P03 nhưng ghi thật 0 | `bang_chung/buoc4_agent_ollama*.txt`, `buoc4_agent.txt`, `buoc4_agent_api.txt`, `out/nhat_ky_agent.jsonl`, ảnh `bang_chung/anh/04_ca_tiem_bi_chan.png` | 1,5 |
 | Chỉ số có định nghĩa, tập nhỏ đúng | Tập nhỏ: tay **50,0** = SQL **50,0** (bản đầu của AI 100,0) · 4 lỗi dữ liệu · 3 chỉ số có tên | `bang_chung/buoc5_phan_tich.txt`, `out/bieu_do_ty_le.png` | 1,5 |
 | Cộng điểm chạy lại an toàn | Lần 1 cộng mới **44** · lần 2 cộng mới **0** · **2** ngoại lệ có lý do · cân bằng 174 = 174 · lịch 18:00 chạy thử: moi=0 | `bang_chung/buoc6_cong_diem.txt`, `buoc6_lich_chay.txt`, `out/ngoai_le.csv`, `out/nhat_ky_cong_diem.txt` | 1,0 |
-| Quy trình nhóm (Buổi 5, không tính điểm) | Git 11 commit · kho GitHub có bảo vệ nhánh · PR #1 theo mẫu 5 mục · CI `pytest` đạt 24 passed trên Ubuntu · Docker: chưa chạy (tùy chọn, máy chưa cài) | `bang_chung/buoc8_github_ci.txt` | — |
+| Quy trình nhóm (Buổi 5, không tính điểm) | Git 13 commit · kho GitHub có bảo vệ nhánh · PR #1 theo mẫu 5 mục · CI `pytest` đạt 24 passed trên Ubuntu · Docker: chưa chạy (tùy chọn, máy chưa cài) | `bang_chung/buoc8_github_ci.txt` | — |
 | Poster đạt ba phép kiểm | Tương phản 10,7 và 7,0 (≥ 4,5) · đối chiếu 4/4 · alt text · cùng seed → cùng nền | `out/poster/poster.png`, `kiem_tra.md`, `so_tai_san.csv`, `bang_chung/buoc7_poster.txt` | 1,0 |
 
 ## Bước 0 · Chuẩn bị môi trường
