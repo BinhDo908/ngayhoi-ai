@@ -1,0 +1,20 @@
+﻿> schtasks /create /tn CongDiem /sc daily /st 18:00 /tr "\"<du an>\.venv\Scripts\python.exe\" -X utf8 \"<du an>\scripts\cong_diem.py\"" /f
+SUCCESS: The scheduled task "CongDiem" has successfully been created.
+
+> schtasks /query /tn CongDiem /v /fo list
+TaskName:                             \CongDiem
+Next Run Time:                        11/16/2026 6:00:00 PM
+Status:                               Ready
+Last Run Time:                        11/16/2026 5:23:42 PM
+Last Result:                          0
+Task To Run:                          "C:\Users\Admin\Documents\VJU\F1Y4\AI Toolkits\TongHop_23110154\ngayhoi-ai\.venv\Scripts\python.exe" -X utf8 "C:\Users\Admin\Documents\VJU\F1Y4\AI Toolkits\TongHop_23110154\ngayhoi-ai\scripts\cong_diem.py"
+Schedule Type:                        Daily 
+Start Time:                           6:00:00 PM
+
+> schtasks /run /tn CongDiem      (chay ngay mot lan de kiem tra)
+
+> type out\nhat_ky_cong_diem.txt
+2026-11-16 16:21:24 du=44 moi=44 ngoai_le=2
+2026-11-16 16:21:24 du=44 moi=0 ngoai_le=2
+2026-11-16 16:21:43 du=44 moi=0 ngoai_le=2
+2026-11-16 17:23:43 du=44 moi=0 ngoai_le=2
